@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import {
   StateControlWrapper,
   StyledInput,
   StyledButton,
   ButtonGroup,
 } from "../styles/StyledComponents";
+import { MessageContext } from "../contexts/MessageContext";
 
 function StateControl() {
   const { setMessage } = useContext(MessageContext);

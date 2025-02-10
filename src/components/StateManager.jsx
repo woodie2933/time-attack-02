@@ -1,5 +1,4 @@
-import { useState, useContext } from "react";
-import { MessageContext } from "../contexts/MessageContext";
+import { useState } from "react";
 import {
   StateControlWrapper,
   StyledInput,
@@ -8,8 +7,8 @@ import {
 } from "../styles/StyledComponents";
 
 function StateControl() {
-  const [inputValue, setInputValue] = useState("");
   const { setMessage } = useContext(MessageContext);
+  const [inputValue, setInputValue] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();

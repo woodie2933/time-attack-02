@@ -1,9 +1,9 @@
-import { useContext } from "react";
-import { MessageContext } from "../contexts/MessageContext";
+import PropTypes from "prop-types";
 import {
   LevelContainer,
   MessageDisplayWrapper,
 } from "../styles/StyledComponents";
+import { useContext } from "react";
 
 function Level1() {
   return (
@@ -42,5 +42,21 @@ function MessageDisplay() {
     </MessageDisplayWrapper>
   );
 }
+
+Level1.propTypes = {
+  message: PropTypes.string,
+};
+
+Level2.propTypes = {
+  message: PropTypes.string,
+};
+
+Level3.propTypes = {
+  message: PropTypes.string,
+};
+
+MessageDisplay.propTypes = {
+  message: PropTypes.string,
+};
 
 export default Level1;

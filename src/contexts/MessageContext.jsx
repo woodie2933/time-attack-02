@@ -1,5 +1,4 @@
 import { createContext, useState } from "react";
-import PropTypes from "prop-types";
 
 export const MessageContext = createContext();
 
@@ -12,7 +11,3 @@ export function MessageProvider({ children }) {
     </MessageContext.Provider>
   );
 }
-
-MessageProvider.propTypes = {
-  children: PropTypes.node.isRequired,
-};
